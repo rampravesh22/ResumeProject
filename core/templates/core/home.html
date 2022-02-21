@@ -1,0 +1,36 @@
+{% extends "core/base.html" %} {% load static %} 
+
+{% block content %}
+
+<div <i class="textmt-5"></i>>
+  <div class="text-center">
+    <img src="{% static 'core/images/rpc.jpg' %}" alt="Profile Pic"
+    class="img-thumbnail" width="150px" height="100px">
+  </div>
+
+  {% comment %} Home content {% endcomment %}
+  <div class="text-white mt-5 text-justify">
+    <h1 class="font-weight-bold px-3 st-font">Hello,</h1>
+    <div class="px-4" style="line-height:2rem">
+      <p style="text-indent:100px;"> I am <b class="text-warning st-font">Rampravesh Chaudhari</b>. I am from Gorakhpur district but I am staying in Prayagraj for my graduation.
+      <p>Currently I am pursuing Bachelor of Technology In <span class="text-warning">Computer Science</span> from United College of Engineering And Research Prayagraj with 74 percentage.
+       I completed my Higher secondary school from Maharaja Chatrasal Inter College from Maharajganj with 82 pecentage and I compeleted my Highschool from Duragawati Devi Higher secondary School from Maharajganj district with 86 percentage.
+      </p>
+      <p>
+      My technical skills include programming in <span class="text-warning">Python</span> and Java. I am also familiar with <span class="text-warning">Web developement</span>.
+      I made three project one is based on machine learning that is that <span class="text-warning">House price prediction model</span>, second is based on HTMl css and javascript which is a simple calculator and third one is based on django framework that is Resume project
+      </p>
+
+      <p>
+        My hobbies are playing volleyboll and playing chess. I play volleboll for my physical exercise and playing chess improve my logical thinking .
+        Thats all about myself.
+      </p>
+      </p>
+    </div>
+  </div>
+  <div class="text-center">
+    <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5 mx-3">Hire Me</a>
+    <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+  </div>
+</div>
+{% endblock content %}

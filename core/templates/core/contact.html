@@ -1,0 +1,60 @@
+{% extends 'core/base.html' %} {% block content %}
+<div class="container mt-5">
+  <h1 class="text-warning mb-5 border-bottom center-heading">Contact Us</h1>
+  <div class="row text-white mb-5">
+    <p class="mx-auto mb-5">
+      Do you have any question ? please do not hesitate to contact. I will come
+      back to you within a matter of hours to help you.
+    </p>
+    <div class="col-sm-9 mb-5">
+      <form action="">
+        <div class="row">
+          <div class="form-group col-md-6 mb-2">
+            <label for="inputName">Your Name</label>
+            <input type="text" class="form-control" ,id="inputName" />
+          </div>
+          <div class="form-group col-md-6 mb-2">
+            <label for="inputEmail">Your Email *</label>
+            <input type="email" class="form-control" ,id="InputEmail" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputSubject">Your Subject</label>
+          <input type="text" class="form-control mb-2" ,id="inputSubject" />
+        </div>
+
+        <div class="form-group">
+          <label for="inputTextarea">Your Message *</label>
+          <textarea class="form-control mb-2" ,id="inputTextarea" required></textarea>
+        </div>
+        <button class="btn btn-primary mt-2" type="submit">Send</button>
+      </form>
+    </div>
+    <div class="col-sm-3 text-center">
+      <ul class="list-unstyled">
+        <li>
+          <i class="fas fa-map-marker-alt fa-2x i-color hover-fx"></i>
+          <p>Maharaganj, Uttar Pradesh, India</p>
+        </li>
+        <li>
+          <i class="fas fa-phone mt-4 fa-2x i-color"></i>
+          <p>+91 8828282920</p>
+        </li>
+        <li>
+          <i class="fas fa-envelope mt-4 fa-2x i-color"></i>
+          <p>rpc1234@gmail.com</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <a href="#" target="_blank" class="hover-fx"><i class="fab fa-twitter fa-2x i-color mr-6"></i></a>
+    <a href="#" target="_blank" class="hover-fx"><i class="fab fa-facebook-f fa-2x i-color mx-2"></i></a>
+    <a href="#" target="_blank" class="hover-fx"><i class="fab fa-instagram fa-2x i-color mx-2"></i></a>
+    <a href="#" target="_blank" class="hover-fx"><i class="fab fa-dribbble fa-2x i-color mx-2"></i></a>
+  </div>
+</div>
+
+{% endblock content %}
